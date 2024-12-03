@@ -37,6 +37,11 @@ jobs:
     - name: Terraform Plan
       run: terraform plan -out=tfplan
       working-directory: ./tf
+    # Plan Terraform changes
+    - name: Terraform import
+      run: terraform import aws_s3_bucket.example nagur112233
+
+      working-directory: ./tf
 
     # Apply Terraform changes
     - name: Terraform Apply
