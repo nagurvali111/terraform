@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "Nagur_tst" {
-  bucket = "nagur1"
+  bucket = "nagur112233"
 
   tags = {
     Name        = "My bucket"
